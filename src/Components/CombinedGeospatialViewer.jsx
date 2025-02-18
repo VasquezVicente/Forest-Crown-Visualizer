@@ -257,7 +257,7 @@ const CombinedGeospatialViewer = ({ date }) => {
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 <div>
                     <label style={{ display: 'block', marginBottom: '0.5rem' }}>
-                        Leafing Amount (0-10):
+                        Leafing Coverage (0-100):
                         <input
                             type="range"
                             min="0"
