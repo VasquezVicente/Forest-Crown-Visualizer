@@ -261,7 +261,7 @@ const CombinedGeospatialViewer = ({ date }) => {
                         <input
                             type="range"
                             min="0"
-                            max="10"
+                            max="100"
                             value={leafingValue}
                             onChange={(e) => setLeafingValue(parseInt(e.target.value))}
                             style={{ width: '100%', marginTop: '0.5rem' }}
@@ -332,11 +332,11 @@ const CombinedGeospatialViewer = ({ date }) => {
                 {floweringStatus === 'yes' && (
                     <div>
                         <label style={{ display: 'block', marginBottom: '0.5rem' }}>
-                            Flowering Intensity (1-5):
+                            Flowering Intensity (1-100):
                             <input
                                 type="range"
                                 min="1"
-                                max="5"
+                                max="100"
                                 value={floweringValue}
                                 onChange={(e) => setFloweringValue(parseInt(e.target.value))}
                                 style={{ width: '100%', marginTop: '0.5rem' }}
