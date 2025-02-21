@@ -32,7 +32,9 @@ const DateSelector = () => {
         '2024-03-06', '2024-03-18'
     ];
 
-    const [selectedDate, setSelectedDate] = useState(dates[0] ?? '');
+    // Randomly select an initial date
+    const [selectedDate, setSelectedDate] = useState(dates[Math.floor(Math.random() * dates.length)]);
+    //const [selectedDate, setSelectedDate] = useState(dates[0] ?? '');
 
     const handleDateChange = (event) => {
         setSelectedDate(event.target.value);
